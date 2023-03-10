@@ -1,0 +1,109 @@
+.ItemInfo,
+.ItemInfo-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  background-color: var(--background-color);
+}
+.ItemInfo-poster {
+  min-width: 300px;
+  width: 70%;
+  height: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #d9d9d9;
+}
+.item-info-title {
+  font-size: 25px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+.video-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ItemInfo-info {
+  width: 80%;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  margin-bottom: 30px;
+  display: block;
+  text-align: justify;
+  /* float: left; */
+  color: var(--text-color);
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.video-responsive iframe {
+  height: 170px;
+  width: 300px;
+  margin-bottom: 15px;
+}
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ItemInfo-retrouver {
+  max-width: 400px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+.ItemInfo-retrouver-sur {
+  font-size: 30px;
+}
+@media screen and (min-width: 426px) and (max-width: 785px) {
+  .video-responsive iframe {
+    height: 270px;
+    width: 540px;
+  }
+  .ItemInfo-info {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 786px) {
+  .ItemInfo-first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+    align-items: flex-start;
+  }
+  .ItemInfo-poster {
+    width: 400px;
+    margin-right: 20px;
+  }
+  .video-responsive {
+    margin-top: 20px;
+  }
+  .video-responsive iframe {
+    height: 270px;
+    width: 500px;
+  }
+  .ItemInfo-info {
+    width: 500px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    display: block;
+    float: left;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+  }
+  .ItemInfo-retrouver {
+    justify-content: space-between;
+    display: flex;
+  }
+}
